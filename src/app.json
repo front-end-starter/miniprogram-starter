@@ -1,0 +1,11 @@
+{
+	"pages": [
+		"pages/home/index"
+	],
+
+	"window": {
+		"navigationBarTitleText": "MiniProgram Starter"
+	},
+
+	"debug": false
+}

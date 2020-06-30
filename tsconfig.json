@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"strict": true,
+		"module": "CommonJS",
+		"allowJs": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"downlevelIteration": true,
+		"removeComments": true,
+
+		"baseUrl": "./src/",
+		"paths": {
+			"@/components/*": ["components/*"],
+			"@/pages/*": ["pages/*"],
+			"@/api/*": ["api/*"]
+		},
+
+		"types": [
+			"miniprogram-api-typings"
+		],
+
+		"locale": "zh-CN"
+	},
+
+	"exclude": [
+		"node_modules"
+	]
+}

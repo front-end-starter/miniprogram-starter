@@ -1,0 +1,40 @@
+{
+	"name": "@emerge_front_end_starter/miniprogram_starter",
+	"version": "0.1.0",
+	"description": "miniprogram starter",
+	"license": "MIT",
+	"scripts": {
+		"dev": "TSC_WATCHFILE=\"UseFsEventsWithFallbackDynamicPolling\" TS_NODE_PROJECT=\"./build/webpack.tsconfig.json\" webpack-cli --progress --config ./build/dev.webpack.config.ts"
+	},
+	"devDependencies": {
+		"@types/clean-webpack-plugin": "0.1",
+		"@types/glob": "7.1",
+		"@types/node": "14.0",
+		"@types/webpack": "4.41",
+		"@types/webpack-merge": "4.1",
+		"clean-webpack-plugin": "3.0",
+		"cross-spawn": "7.0",
+		"css-loader": "3.6",
+		"extract-loader": "5.1",
+		"file-loader": "6.0",
+		"fsevents": "2.1",
+		"glob": "7.1",
+		"html-loader": "1.1",
+		"miniprogram-api-typings": "2.11",
+		"pnp-webpack-plugin": "1.6",
+		"postcss-loader": "3.0",
+		"postcss-preset-env": "6.7",
+		"pug-html-loader": "1.1",
+		"ts-loader": "7.0",
+		"ts-node": "8.10",
+		"tsconfig-paths": "3.9",
+		"tsconfig-paths-webpack-plugin": "3.2",
+		"typescript": "3.9",
+		"webpack": "4.43",
+		"webpack-cli": "3.3",
+		"webpack-merge": "4.2"
+	},
+	"installConfig": {
+		"pnp": true
+	}
+}
