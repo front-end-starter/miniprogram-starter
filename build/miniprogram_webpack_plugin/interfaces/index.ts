@@ -1,5 +1,1 @@
-import Options from './options';
-
-export {
-	Options
-};
+export { Options } from './options';

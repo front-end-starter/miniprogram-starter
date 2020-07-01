@@ -11,7 +11,7 @@ import * as Interfaces from './interfaces';
 class MiniprogramWebpackPlugin
 {
 	protected options: Interfaces.Options = {
-
+		ignore: []
 	};
 
 	public constructor(readonly custom_options?: Interfaces.Options)
@@ -41,9 +41,8 @@ class MiniprogramWebpackPlugin
 				,
 				ignore: [
 					'@types/**/*',
-					'store/**/*',
 					'**/*.d.ts'
-				]
+				].concat(this.options.ignore)
 			});
 
 			const exts = {

@@ -101,6 +101,10 @@ export const config: Configuration = {
 
 	plugins:[
 		new CleanWebpackPlugin(),
-		new MiniprogramWebpackPlugin()
+		new MiniprogramWebpackPlugin({
+			ignore: [
+				'store/**/*'
+			]
+		})
 	]
 };
