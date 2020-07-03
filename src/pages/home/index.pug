@@ -1,1 +1,13 @@
-view {{ text }}
+wxs(
+	src="../../wxs/obj_to_query_string.wxs"
+	module="obj_to_query_string"
+)
+
+view(class="news"
+	wx:for='{{ news_list }}'
+	wx:for-item='news'
+	wx:key='guid'
+)
+	navigator(
+		url="/pages/news_detail/index?{{ obj_to_query_string(news) }}"
+	) {{ news.title }}
