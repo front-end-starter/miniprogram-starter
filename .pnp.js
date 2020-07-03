@@ -50,6 +50,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:4.1.5"
       ],
       [
+        "@types/xmldom",
+        "npm:0.1.29"
+      ],
+      [
         "clean-webpack-plugin",
         "virtual:1e47b80fd3b48df0dc22a80be38238c113364bdf71f1b9086f9aa71f0c31da87460aea9cda6e0143778bd7b225491ab5117285b821600f45d2b9a9e54142fad6#npm:3.0.0"
       ],
@@ -132,6 +136,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [
         "webpack-merge",
         "npm:4.2.2"
+      ],
+      [
+        "xmldom",
+        "npm:0.3.0"
       ]
     ],
     "locationBlacklistData": [
@@ -146,6 +154,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.0.14"],
             ["@types/webpack", "npm:4.41.18"],
             ["@types/webpack-merge", "npm:4.1.5"],
+            ["@types/xmldom", "npm:0.1.29"],
             ["clean-webpack-plugin", "virtual:1e47b80fd3b48df0dc22a80be38238c113364bdf71f1b9086f9aa71f0c31da87460aea9cda6e0143778bd7b225491ab5117285b821600f45d2b9a9e54142fad6#npm:3.0.0"],
             ["cross-spawn", "npm:7.0.3"],
             ["css-loader", "virtual:1e47b80fd3b48df0dc22a80be38238c113364bdf71f1b9086f9aa71f0c31da87460aea9cda6e0143778bd7b225491ab5117285b821600f45d2b9a9e54142fad6#npm:3.6.0"],
@@ -166,7 +175,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A3.9.5#builtin<compat/typescript>::version=3.9.5&hash=64df9d"],
             ["webpack", "npm:4.43.0"],
             ["webpack-cli", "virtual:1e47b80fd3b48df0dc22a80be38238c113364bdf71f1b9086f9aa71f0c31da87460aea9cda6e0143778bd7b225491ab5117285b821600f45d2b9a9e54142fad6#npm:3.3.12"],
-            ["webpack-merge", "npm:4.2.2"]
+            ["webpack-merge", "npm:4.2.2"],
+            ["xmldom", "npm:0.3.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -190,6 +200,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.0.14"],
             ["@types/webpack", "npm:4.41.18"],
             ["@types/webpack-merge", "npm:4.1.5"],
+            ["@types/xmldom", "npm:0.1.29"],
             ["clean-webpack-plugin", "virtual:1e47b80fd3b48df0dc22a80be38238c113364bdf71f1b9086f9aa71f0c31da87460aea9cda6e0143778bd7b225491ab5117285b821600f45d2b9a9e54142fad6#npm:3.0.0"],
             ["cross-spawn", "npm:7.0.3"],
             ["css-loader", "virtual:1e47b80fd3b48df0dc22a80be38238c113364bdf71f1b9086f9aa71f0c31da87460aea9cda6e0143778bd7b225491ab5117285b821600f45d2b9a9e54142fad6#npm:3.6.0"],
@@ -210,7 +221,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A3.9.5#builtin<compat/typescript>::version=3.9.5&hash=64df9d"],
             ["webpack", "npm:4.43.0"],
             ["webpack-cli", "virtual:1e47b80fd3b48df0dc22a80be38238c113364bdf71f1b9086f9aa71f0c31da87460aea9cda6e0143778bd7b225491ab5117285b821600f45d2b9a9e54142fad6#npm:3.3.12"],
-            ["webpack-merge", "npm:4.2.2"]
+            ["webpack-merge", "npm:4.2.2"],
+            ["xmldom", "npm:0.3.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -361,6 +373,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.0.14"],
             ["@types/source-list-map", "npm:0.1.2"],
             ["source-map", "npm:0.7.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/xmldom", [
+        ["npm:0.1.29", {
+          "packageLocation": "./.yarn/cache/@types-xmldom-npm-0.1.29-6de51811f1-ec9b332039.zip/node_modules/@types/xmldom/",
+          "packageDependencies": [
+            ["@types/xmldom", "npm:0.1.29"]
           ],
           "linkType": "HARD",
         }]
@@ -7759,6 +7780,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/wrappy-npm-1.0.2-916de4d4b3-519fcda0fc.zip/node_modules/wrappy/",
           "packageDependencies": [
             ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["xmldom", [
+        ["npm:0.3.0", {
+          "packageLocation": "./.yarn/cache/xmldom-npm-0.3.0-e0ce3aada2-2168c08dcf.zip/node_modules/xmldom/",
+          "packageDependencies": [
+            ["xmldom", "npm:0.3.0"]
           ],
           "linkType": "HARD",
         }]

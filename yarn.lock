@@ -21,6 +21,7 @@ __metadata:
     "@types/node": 14.0
     "@types/webpack": 4.41
     "@types/webpack-merge": 4.1
+    "@types/xmldom": 0.1
     clean-webpack-plugin: 3.0
     cross-spawn: 7.0
     css-loader: 3.6
@@ -42,6 +43,7 @@ __metadata:
     webpack: 4.43
     webpack-cli: 3.3
     webpack-merge: 4.2
+    xmldom: 0.3
   languageName: unknown
   linkType: soft
 
@@ -169,6 +171,13 @@ __metadata:
     "@types/webpack-sources": "*"
     source-map: ^0.6.0
   checksum: 43fefaccabdb16408e63f6e884ecb455d08842540ee63d95f310b7607b0f1725672ea3584025f1c974b2ab8d314dfde121d23da46a18896d986481ec472b33ef
+  languageName: node
+  linkType: hard
+
+"@types/xmldom@npm:0.1":
+  version: 0.1.29
+  resolution: "@types/xmldom@npm:0.1.29"
+  checksum: ec9b3320396e8178c3be780db7d09a0bf93574a7b6498d90ea5c7d4b6c129528ebbd31d18dae8d602e5cdaf258575b1e3428a7f04393aba684a6919f5f1ae9b6
   languageName: node
   linkType: hard
 
@@ -6874,6 +6883,13 @@ typescript@3.9:
   version: 1.0.2
   resolution: "wrappy@npm:1.0.2"
   checksum: 519fcda0fcdf0c16327be2de9d98646742307bc830277e8868529fcf7566f2b330a6453c233e0cdcb767d5838dd61a90984a02ecc983bcddebea5ad0833bbf98
+  languageName: node
+  linkType: hard
+
+"xmldom@npm:0.3":
+  version: 0.3.0
+  resolution: "xmldom@npm:0.3.0"
+  checksum: 2168c08dcfe3c942bfd7f9fce5604cb2ef1e2b3c89f30b6e956237430e8fb2e3095371a2ce058a168038dcb265aa31428e70d06e6c4703375c2f171ae9639f6a
   languageName: node
   linkType: hard
 

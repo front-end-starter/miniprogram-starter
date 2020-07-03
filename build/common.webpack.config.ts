@@ -40,8 +40,22 @@ export const config: Configuration = {
 	module: {
 		rules: [
 			{
-				test: /\.ts$/,
+				test: /^[^\.]*\.ts$/,
 				loader: require.resolve('ts-loader')
+			},
+
+			{
+				test: /^[^\.]*\.wxs\.ts$/,
+				use: [
+					{
+						loader: require.resolve('file-loader'),
+						options: {
+							name: '[path][name]',
+							context: 'src'
+						}
+					},
+					{ loader: require.resolve('ts-loader') }
+				]
 			},
 
 			{

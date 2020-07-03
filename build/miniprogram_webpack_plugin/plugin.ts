@@ -30,11 +30,12 @@ class MiniprogramWebpackPlugin
 			: (webpack_options.entry as Webpack.Entry)['app']
 		;
 
+		// 多入口文件设置
 		compiler.hooks.entryOption.tap(this.constructor.name, (
 			context,
 			entry
 		) => {
-			const paths = Glob.sync('**/*.*(ts|css|pug|json)', {
+			const paths = Glob.sync('**/*.*(ts|css|pug|json|wxs.tsx)', {
 				cwd: typeof miniprogram_context !== 'undefined'
 					? Path.join(miniprogram_context, './src')
 					: undefined
@@ -47,13 +48,23 @@ class MiniprogramWebpackPlugin
 
 			const exts = {
 				'.ts': '',
+				'.wxs.ts': '.wxs',
 				'.pug': '.wxml',
 				'.css': '.wxss',
 				'.json': '.json'
 			};
 
 			paths.map((file_path) => {
-				const path_info = Path.parse(file_path);
+				const path_info = Object.assign(
+					{ dir: '', name: '', ext: '' },
+					file_path
+						.match(/^(?<dir>.*?)\/?(?<name>[^\.\/]*?)(?<ext>\..*)$/)
+						?.groups as {
+							dir: string;
+							name: string;
+							ext: string;
+						}
+				);
 
 				this.entry_plugin(
 					miniprogram_context + '/src/',
@@ -71,6 +82,7 @@ class MiniprogramWebpackPlugin
 			return true;
 		});
 
+		// 删除多余的js文件
 		compiler.hooks.compilation.tap(this.constructor.name, (
 			compilation
 		) => {
@@ -79,6 +91,7 @@ class MiniprogramWebpackPlugin
 				filename
 			) => {
 				const assets_suffix = [
+					'.wxs.js',
 					'.wxss.js',
 					'.wxml.js',
 					'.json.js'
@@ -104,6 +117,7 @@ class MiniprogramWebpackPlugin
 			});
 		});
 	}
+
 
 	protected entry_plugin(
 		context: string,

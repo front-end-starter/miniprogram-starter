@@ -18,7 +18,7 @@ const config: Configuration = MergeWebpackPlugin(common_config, {
 		path: Path.join(__dirname, '../dist/'),
 		publicPath: '/',
 		filename: '[name].js',
-		chunkFilename: '[name].js'
+		chunkFilename: '[name].js',
 	}
 });
 
