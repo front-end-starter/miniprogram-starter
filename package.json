@@ -34,7 +34,7 @@
 		"webpack": "4.43",
 		"webpack-cli": "3.3",
 		"webpack-merge": "4.2",
-		"xmldom": "0.3"
+		"xmldom": "0.6"
 	},
 	"installConfig": {
 		"pnp": true
